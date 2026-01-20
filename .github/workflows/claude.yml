@@ -30,6 +30,15 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Debug API Key
+        run: |
+          # 检查 API Key 是否正确设置（仅用于调试）
+          if [ -z "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "API Key is empty or not set"
+          else
+            echo "API Key is set (first 10 chars): ${ANTHROPIC_API_KEY:0:10}..."
+          fi
+
       - name: Run Claude Code
         id: claude
         uses: anthropics/claude-code-action@v1
