@@ -7,13 +7,19 @@
 </head>
 <body>
   Welcome!
-
+  <div>
+    <button id="BtnTest">Click Me</button>
+  </div>
   <script>
     function demo_sum(a,b){
       return Number(a) + Number(b);
     }
 
-    aws_sum(1,2)
+    let btn = document.getElementById("BtnTest");
+    btn.onclick = function() {
+      awsome_sum(1,2)
+    }
+
   </script>
 </body>
 </html>
