@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  Welcome!
-  <div>
-    <button id="BtnTest">Click Me</button>
-  </div>
-  <script>
-    function demo_sum(a,b){
-      return Number(a) + Number(b);
-    }
-
-    let btn = document.getElementById("BtnTest");
-    btn.onclick = function() {
-      do_some_sum(1,3)
-    }
-
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue + Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
